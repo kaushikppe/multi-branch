@@ -5,6 +5,7 @@ services:
 before_install:
     - docker build -t kaushikppe/react-test -f ./clientApp/Dockerfile.dev ./clientApp
 
+    
 script:
     - docker run -e CI=true kaushikppe/react-test npm test -- -- coverage
 
