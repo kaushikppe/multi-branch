@@ -30,7 +30,7 @@ deploy:
     app: "multi-docker"
     env: "MultiDocker-env-1"
     bucket_name: "elasticbeanstalk-us-east-2-377514948958"
-    bucket_path: "docker-multi"
+    bucket_path: "Docker-React"
     on:
         branch: master
     access_key_id: $AWS_ACCESS_KEY
