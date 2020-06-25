@@ -1,12 +1,12 @@
 {
-    "AWSEBDockerrunversion": 2,
+    "AWSEBDockerrunVersion": 2,
     "containerDefinitions": [
         {
             "name": "client",
             "image": "kaushikppe/multi-client",
             "hostname": "client",
             "essential": false,
-            "momory": 128
+            "memory": 128
 
         },
         {
@@ -14,14 +14,14 @@
             "image": "kaushikppe/multi-server",
             "hostname": "api",
             "essential": false,
-            "momory": 128
+            "memory": 128
         },
         {
             "name": "worker",
             "image": "kaushikppe/multi-worker",
             "hostname": "worker",
             "essential": false,
-            "momory": 128
+            "memory": 128
         },
         {
             "name": "nginx",
@@ -35,7 +35,7 @@
                 }
             ],
             "links": ["client","server"],
-            "momory": 128
+            "memory": 128
         }
     ]
 }
